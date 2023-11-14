@@ -26,26 +26,33 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.StudentFirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StudentLastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StudentPhone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StudentEmail)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentEmail)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+            </td>
+        </tr>
+    }
 
+<form id="form" role="search">
+    <input type="search" id="query" name="q"
+           placeholder="Search..."
+           aria-label="Search through site content">
+    <button>Search</button>
+</form>
 </table>
