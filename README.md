@@ -1,5 +1,5 @@
-# Lab7
-Lab 7 Group Assignment for Object Oriented
+# Lab 7 - Student Information System (SIS)
+Lab 7 Group Assignment for Object Oriented. SIS is an application to manage assigning students, instructors, and TAs to courses.
 
 ## Professors Specifications/Notes in Class 
 **Name of Database (The one that the TA will restore):**
